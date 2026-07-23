@@ -346,11 +346,11 @@ if [[ "$APPLY_DROIDSPACES" == [sSeE] ]]; then
     # 开启 systemd-coredump 支持
     echo "CONFIG_STATIC_USERMODEHELPER=n" >> "$DEFCONFIG_FILE"
     # 添加 Lindroid EVDI DRM 驱动
-    echo "CONFIG_DRM_LINDROID_EVDI=y" >> "$DEFCONFIG_FILE"
-    cd common
-    wget https://github.com/cctv18/oppo_oplus_realme_sm8850/raw/refs/heads/main/droidspaces_patch/evdi_drm.patch
-    patch -p1 -F 3 < evdi_drm.patch || true
-    cd ..
+    # echo "CONFIG_DRM_LINDROID_EVDI=y" >> "$DEFCONFIG_FILE"
+    # cd common
+    # wget https://github.com/cctv18/oppo_oplus_realme_sm8850/raw/refs/heads/main/droidspaces_patch/evdi_drm.patch
+    # patch -p1 -F 3 < evdi_drm.patch || true
+    # cd ..
   fi
 fi
 
